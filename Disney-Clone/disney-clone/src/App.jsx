@@ -1,14 +1,18 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Login from './Components/login'
+import Login from "./Components/Login";
+import Header from "./Components/Header";
+import Home from './Components/Home';
 
 function App() {
 
   return (
     <div className="App">
       <Router>
+        <Header />
         <Routes>
-          <Route path="/" element={<Login />}></Route>
+          <Route path="/" element={<Login />} />
+          <Route path="/home" element={<Home />} />
         </Routes>
       </Router>
     </div>
@@ -16,3 +20,4 @@ function App() {
 }
 
 export default App
+
