@@ -4,7 +4,7 @@ import db from "../firebase";
 import { Container, Player, Background, Description, SubTitle, GroupWatch, AddList, Trailer, Controls, ContentMeta, ImageTitle } from "./sharedStyle"
 import playIconwhite from "../../src/Images/play-icon-white.png"
 import playIconBlack from "../../src/Images/play-icon-black.png"
-import groupWatch from "../../src/Images/group-icon.png"
+import groupwatch from "../../src/Images/group-icon.png"
 
 const Detail = () => {
     const { id } = useParams();
@@ -51,7 +51,7 @@ const Detail = () => {
                     </AddList>
                     <GroupWatch>
                         <div>
-                            <img src={groupWatch} alt="" />
+                            <img src={groupwatch} alt="" />
                         </div>
                     </GroupWatch>
                 </Controls>
