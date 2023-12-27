@@ -1,0 +1,9 @@
+[build]
+  # Directory to change to before starting a build
+  base = "React Projects/Slack Clone/slack-clone"
+
+  # Build command
+  command = "npm run build"
+
+  # Publish directory (where the built app will be)
+  publish = "React Projects/Slack Clone/slack-clone/build"
