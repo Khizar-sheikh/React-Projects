@@ -5,7 +5,7 @@ import { useStatevalue } from './../Provider/StateProvider';
 import { actionTypes } from "../Provider/Reducer";
 
 function Login() {
-    const [state, dispatch] = useStatevalue();
+    const [dispatch] = useStatevalue();
 
     function signin() {
         auth.signInWithPopup(provider)
