@@ -2,6 +2,30 @@
 
 This project is a Slack clone that enables users to send text messages, sign in using Google, create channels, and communicate within a team or group seamlessly.
 
+## Features
+
+- **Text Messaging**: Users can send text messages to communicate.
+- **Google Sign-In**: Allows users to sign in using their Google accounts.
+- **Channel Creation**: Users can create channels for specific topics or discussions.
+- **Group Communication**: Enables users to connect and talk with each other within the created channels.
+
+## Preview
+
+### Chat Preview
+
+![Chat Preview](https://github.com/Khizar-sheikh/React-Projects/raw/main/Slack%20Clone/slack-clone/src/assets/chatpreview.png)
+This image showcases the chat interface within the Slack clone.
+
+### Login Preview
+
+![Login Preview](https://github.com/Khizar-sheikh/React-Projects/raw/main/Slack%20Clone/slack-clone/src/assets/LoginPreview.png)
+This image represents the login interface of the Slack clone.
+
+### Google Sign-In Popup
+
+![Google Sign-In Popup](https://github.com/Khizar-sheikh/React-Projects/raw/main/Slack%20Clone/slack-clone/src/assets/GooglePopup.png)
+This image displays the Google Sign-In popup used in the Slack clone.
+
 ## Description
 
 The Slack clone utilizes Firebase for its backend operations:
@@ -16,7 +40,7 @@ To get started, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/Khizar-sheikh/React-Projects/tree/main/Slack%20Clone/slack-clone
     ```
 
 2. Navigate to the project directory:
