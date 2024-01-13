@@ -4,28 +4,32 @@ import viewersmarvel from "../../src/Images/viewers-marvel.png"
 import viewerspixar from "../../src/Images/viewers-pixar.png"
 import viewersnational from "../../src/Images/viewers-national.png"
 import viewersstarwars from "../../src/Images/viewers-starwars.png"
-
+import video1 from "../../src/videos/1564674844-disney.mp4"
+import video2 from "../../src/videos/1564676714-pixar.mp4"
+import video3 from "../../src/videos/1564676115-marvel.mp4"
+import video4 from "../../src/videos/1608229455-star-wars.mp4"
+import video5 from "../../src/videos/1564676296-national-geographic.mp4"
 
 function Viewers() {
-    const ViewersImages = [
-        { name: 'Disney', img: viewersdisney, video: "../../src/videos/1564674844-disney.mp4" },
-        { name: 'Pixar', img: viewerspixar, video: "../../src/videos/1564676714-pixar.mp4" },
-        { name: 'Marvel', img: viewersmarvel, video: "../../src/videos/1564676115-marvel.mp4" },
-        { name: 'Star Wars', img: viewersstarwars, video: "../../src/videos/1608229455-star-wars.mp4" },
-        { name: 'National Geographic', img: viewersnational, video: "../../src/videos/1564676296-national-geographic.mp4" },
-    ]
-    return (
-        <Container>
-            {ViewersImages.map((viewerimage, index) => (
-                <Wrap key={index + 1}>
-                    <img src={viewerimage.img} alt={`${viewerimage.name}-Viewer`} />
-                    <video autoPlay={true} loop={true} playsInline={true} >
-                        <source src={viewerimage.video} type="video/mp4" />
-                    </video>
-                </Wrap>
-            ))}
-        </Container>
-    )
+  const ViewersImages = [
+    { name: 'Disney', img: viewersdisney, video: video1 },
+    { name: 'Pixar', img: viewerspixar, video: video2 },
+    { name: 'Marvel', img: viewersmarvel, video: video3 },
+    { name: 'Star Wars', img: viewersstarwars, video: video4 },
+    { name: 'National Geographic', img: viewersnational, video: video5 },
+  ]
+  return (
+    <Container>
+      {ViewersImages.map((viewerimage, index) => (
+        <Wrap key={index + 1}>
+          <img src={viewerimage.img} alt={`${viewerimage.name}-Viewer`} />
+          <video autoPlay={true} loop={true} playsInline={true} >
+            <source src={viewerimage.video} type="video/mp4" />
+          </video>
+        </Wrap>
+      ))}
+    </Container>
+  )
 }
 const Container = styled.div`
   margin-top: 30px;

@@ -1,24 +1,27 @@
 import styled from "styled-components";
 import ctalogoone from "../../src/Images/cta-logo-one.svg"
 import ctalogotwo from "../../src/Images/cta-logo-two.png"
+import loginBackground from "../Images/login-background.jpg";
+
 function Login() {
-    return (
-        <Container>
-            <Content>
-                <CTA>
-                    <CTAlogoOne src={ctalogoone} />
-                    <Signup> Get All There </Signup>
-                    <Description>
-                        Get Premier Access to Raya and the Last Dragon for an additional fee
-                        with a Disney+ subscription. As of 16/12/23, the price of Disney+
-                        and The Disney Bundle will increase by $1.
-                    </Description>
-                    <CTALogoTwo src={ctalogotwo} />
-                </CTA>
-                <BgImage />
-            </Content>
-        </Container>
-    )
+  const backgroundImageUrl = `url("${loginBackground}")`;
+  return (
+    <Container>
+      <Content>
+        <CTA>
+          <CTAlogoOne src={ctalogoone} />
+          <Signup> Get All There </Signup>
+          <Description>
+            Get Premier Access to Raya and the Last Dragon for an additional fee
+            with a Disney+ subscription. As of 16/12/23, the price of Disney+
+            and The Disney Bundle will increase by $1.
+          </Description>
+          <CTALogoTwo src={ctalogotwo} />
+        </CTA>
+        <BgImage backgroundImage={backgroundImageUrl} />
+      </Content>
+    </Container>
+  )
 }
 
 const Container = styled.section`
@@ -53,7 +56,7 @@ const BgImage = styled.div`
   right: 0;
   left: 0;
   z-index: -1;
-  background-image: url("../../src/Images/login-background.jpg");
+  background-image: ${(props) => props.backgroundImage}; 
 `
 const CTA = styled.div`
   max-width: 650px;

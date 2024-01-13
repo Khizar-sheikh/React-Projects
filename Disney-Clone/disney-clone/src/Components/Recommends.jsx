@@ -5,8 +5,7 @@ import { Wrap } from "./Viewers";
 import { selectRecommend } from "./features/movie/movieSlice";
 
 const Recommends = () => {
-    const movies = useSelector(selectRecommend);
-    console.log(movies, ":🛢️");
+    const movies = useSelector(selectRecommend)
 
     return (
         <Container>

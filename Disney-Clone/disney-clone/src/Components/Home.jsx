@@ -10,7 +10,7 @@ import { selectUserName } from '../../src/Components/features/user/userSlice';
 import Recommends from "./Recommends";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-
+import home from "../Images/home-background.png"
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -21,10 +21,8 @@ const Home = () => {
   let trending = [];
 
   useEffect(() => {
-    console.log("hello");
     db.collection("movies").onSnapshot((snapshot) => {
       snapshot.docs.map((doc) => {
-        console.log(recommends);
         switch (doc.data().type) {
           case "recommend":
             recommends = [...recommends, { id: doc.id, ...doc.data() }];
@@ -54,9 +52,9 @@ const Home = () => {
       );
     });
   }, [userName]);
-
+  const backgroundImageUrl = home;
   return (
-    <Container>
+    <Container backgroundImage={backgroundImageUrl}>
       <ImgSlider />
       <Viewers />
       <Recommends />
@@ -76,7 +74,7 @@ const Container = styled.main`
   padding: 0 calc(3.5vw + 5px);
 
   &:after {
-    background: url("/images/home-background.png") center center / cover
+    background: url("${(props) => props.backgroundImage}") center center / cover
       no-repeat fixed;
     content: "";
     position: absolute;

@@ -6,7 +6,7 @@ import { selectOriginal } from './features/movie/movieSlice';
 
 function Originals() {
     const movies = useSelector(selectOriginal);
-    console.log(movies, ":🛢️");
+    // console.log(movies, ":🛢️");
     return (
         <Container>
             <h4>Original</h4>
