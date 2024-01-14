@@ -72,6 +72,7 @@ function ChatScreen() {
                             timestamp={timestamp}
                             user={user}
                             userImage={userImage}
+                            messageId={id}
                         />
                     ))
                 }

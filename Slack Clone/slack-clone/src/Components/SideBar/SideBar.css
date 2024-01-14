@@ -5,6 +5,8 @@
   color: #fff;
   flex: 0.3;
   position: relative;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 .sidebar__header {

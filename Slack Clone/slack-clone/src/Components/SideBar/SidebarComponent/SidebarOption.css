@@ -27,3 +27,18 @@
   margin-bottom: 10px;
   border: 1px solid #49274b;
 }
+.sidebar__channel {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  border-bottom: 1px solid #49274b;
+  border-top: 1px solid #49274b;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
+.deleteIcon > .MuiSvgIcon-root {
+  font-size: 16px;
+  margin-top: 1px;
+  margin-left: 40px;
+}
